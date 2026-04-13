@@ -2,9 +2,9 @@ package grpc
 
 import (
 	"context"
-	"doctor-service/internal/model"
-	"doctor-service/internal/usecase"
 
+	"github.com/syndaly1/ap2-assignment2/doctor-service/internal/model"
+	"github.com/syndaly1/ap2-assignment2/doctor-service/internal/usecase"
 	doctorpb "github.com/syndaly1/ap2-assignment2/doctor-service/proto"
 
 	"google.golang.org/grpc/codes"

@@ -1,9 +1,10 @@
 package main
 
 import (
-	"doctor-service/internal/app"
 	"log"
 	"net"
+
+	"github.com/syndaly1/ap2-assignment2/doctor-service/internal/app"
 )
 
 func main() {

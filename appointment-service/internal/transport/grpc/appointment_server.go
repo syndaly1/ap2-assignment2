@@ -1,12 +1,13 @@
 package grpc
 
 import (
-	"appointment-service/internal/model"
-	"appointment-service/internal/usecase"
 	"context"
 	"time"
 
+	"github.com/syndaly1/ap2-assignment2/appointment-service/internal/model"
+	"github.com/syndaly1/ap2-assignment2/appointment-service/internal/usecase"
 	appointmentpb "github.com/syndaly1/ap2-assignment2/appointment-service/proto"
+
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

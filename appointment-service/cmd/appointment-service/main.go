@@ -1,9 +1,10 @@
 package main
 
 import (
-	"appointment-service/internal/app"
 	"log"
 	"net"
+
+	"github.com/syndaly1/ap2-assignment2/appointment-service/internal/app"
 )
 
 func main() {

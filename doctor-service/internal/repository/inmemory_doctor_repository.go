@@ -1,9 +1,10 @@
 package repository
 
 import (
-	"doctor-service/internal/model"
 	"errors"
 	"sync"
+
+	"github.com/syndaly1/ap2-assignment2/doctor-service/internal/model"
 )
 
 type InMemoryDoctorRepository struct {

@@ -1,10 +1,10 @@
 package usecase
 
 import (
-	"doctor-service/internal/model"
 	"errors"
 
 	"github.com/google/uuid"
+	"github.com/syndaly1/ap2-assignment2/doctor-service/internal/model"
 )
 
 var (

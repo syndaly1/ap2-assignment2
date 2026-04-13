@@ -1,10 +1,11 @@
 package repository
 
 import (
-	"appointment-service/internal/model"
 	"errors"
 	"sync"
 	"time"
+
+	"github.com/syndaly1/ap2-assignment2/appointment-service/internal/model"
 )
 
 type InMemoryAppointmentRepository struct {

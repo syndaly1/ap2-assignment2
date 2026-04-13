@@ -1,12 +1,12 @@
 package usecase
 
 import (
-	"appointment-service/internal/model"
 	"context"
 	"errors"
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/syndaly1/ap2-assignment2/appointment-service/internal/model"
 )
 
 var (

@@ -1,11 +1,10 @@
 package app
 
 import (
-	"appointment-service/internal/client"
-	repository "appointment-service/internal/repository"
-	transportgrpc "appointment-service/internal/transport/grpc"
-	"appointment-service/internal/usecase"
-
+	"github.com/syndaly1/ap2-assignment2/appointment-service/internal/client"
+	repository "github.com/syndaly1/ap2-assignment2/appointment-service/internal/repository"
+	transportgrpc "github.com/syndaly1/ap2-assignment2/appointment-service/internal/transport/grpc"
+	"github.com/syndaly1/ap2-assignment2/appointment-service/internal/usecase"
 	appointmentpb "github.com/syndaly1/ap2-assignment2/appointment-service/proto"
 	doctorpb "github.com/syndaly1/ap2-assignment2/doctor-service/proto"
 

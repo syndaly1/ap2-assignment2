@@ -1,10 +1,9 @@
 package app
 
 import (
-	repository "doctor-service/internal/repository"
-	transportgrpc "doctor-service/internal/transport/grpc"
-	"doctor-service/internal/usecase"
-
+	repository "github.com/syndaly1/ap2-assignment2/doctor-service/internal/repository"
+	transportgrpc "github.com/syndaly1/ap2-assignment2/doctor-service/internal/transport/grpc"
+	"github.com/syndaly1/ap2-assignment2/doctor-service/internal/usecase"
 	doctorpb "github.com/syndaly1/ap2-assignment2/doctor-service/proto"
 
 	"google.golang.org/grpc"
