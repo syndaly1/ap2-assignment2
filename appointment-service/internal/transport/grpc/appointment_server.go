@@ -35,7 +35,7 @@ func (s *AppointmentServer) CreateAppointment(ctx context.Context, req *appointm
 		case usecase.ErrTitleRequired, usecase.ErrDoctorIDRequired:
 			return nil, status.Error(codes.InvalidArgument, err.Error())
 		case usecase.ErrDoctorNotFound:
-			return nil, status.Error(codes.NotFound, err.Error())
+			return nil, status.Error(codes.FailedPrecondition, err.Error())
 		case usecase.ErrDoctorUnavailable:
 			return nil, status.Error(codes.Unavailable, err.Error())
 		default:
@@ -82,7 +82,7 @@ func (s *AppointmentServer) UpdateAppointmentStatus(ctx context.Context, req *ap
 		case usecase.ErrInvalidStatus:
 			return nil, status.Error(codes.InvalidArgument, err.Error())
 		case usecase.ErrInvalidTransition:
-			return nil, status.Error(codes.FailedPrecondition, err.Error())
+			return nil, status.Error(codes.InvalidArgument, err.Error())
 		case usecase.ErrAppointmentNotFound:
 			return nil, status.Error(codes.NotFound, err.Error())
 		case usecase.ErrDoctorNotFound:
